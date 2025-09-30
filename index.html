@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gurukrupa Clinic</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+	<header class="bg-primary text-white text-center py-5 position-relative">
+		<div class="header-toggles">
+			<button id="langToggle" class="btn btn-outline-light border-0 shadow-sm d-flex align-items-center" aria-label="Toggle language" style="font-weight:600;">
+				<i class="bi bi-translate me-2"></i> <span id="langLabel">मराठी</span>
+			</button>
+			<button id="modeToggle" class="btn btn-outline-light border-0 shadow-sm d-flex align-items-center" aria-label="Toggle dark mode">
+				<i id="modeIcon" class="bi bi-moon-fill"></i>
+			</button>
+		</div>
+		<div class="container">
+			<h1 class="display-4 mb-2" id="titleGajanan">।। Shri Gajanan Prasanna ।।</h1>
+			<h2 class="fw-bold mb-3" id="titleClinic">Shri Gurukrupa Clinic</h2>
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-lg-6">
+					<div class="card bg-light text-dark shadow mb-3">
+						<div class="card-body">
+							<h3 class="card-title mb-1" id="doctorName">Dr. Kedar Sanjay Patil</h3>
+							<h6 class="card-subtitle mb-2 text-muted" id="doctorDegree">B.A.M.S. (MUHS) | Reg. No.: 1-106259-A</h6>
+							<p class="mb-1" id="doctorSpeciality">General Physician & Surgeon</p>
+							<p class="mb-1"><strong id="clinicHoursLabel">Clinic Hours:</strong> <span id="clinicHours">9 am to 12 pm and 4 pm to 9 pm</span></p>
+							<p class="mb-0"><strong id="contactLabel">Contact:</strong> <a href="tel:9075984392" class="text-primary">9075984392</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="container my-5">
+		<h2 class="text-center mb-4" id="facilitiesTitle">Our Facilities & Treatments</h2>
+		<div class="row g-4 justify-content-center">
+			<div class="col-md-4">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title" id="facilitiesCard">Facilities</h5>
+						<ul class="list-unstyled mb-0" id="facilitiesList">
+							<li><i class="bi bi-droplet me-2 text-primary"></i><span>Blood sugar check</span></li>
+							<li><i class="bi bi-activity me-2 text-primary"></i><span>Treatment of hemorrhoids</span></li>
+							<li><i class="bi bi-cloud-fog2 me-2 text-primary"></i><span>Nebulization (steam supply)</span></li>
+							<li><i class="bi bi-flower1 me-2 text-primary"></i><span>Panchakarma Ayurveda treatment</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title" id="diagnosisCard">Diagnosis & Treatment</h5>
+						<ul class="list-unstyled mb-0" id="diagnosisList">
+							<li><i class="bi bi-thermometer-half me-2 text-primary"></i><span>Typhoid, Malaria</span></li>
+							<li><i class="bi bi-droplet-half me-2 text-primary"></i><span>Jaundice, Arthritis</span></li>
+							<li><i class="bi bi-heart-pulse me-2 text-primary"></i><span>Rheumatism, Stomach disorders</span></li>
+							<li><i class="bi bi-moon-stars me-2 text-primary"></i><span>Diabetic insomnia</span></li>
+							<li><i class="bi bi-emoji-smile me-2 text-primary"></i><span>Obesity</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container my-5">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<div class="card shadow-sm border-0">
+					<div class="card-body">
+						<h2 class="card-title mb-3" id="aboutTitle">About Dr. Kedar Sanjay Patil</h2>
+						<p class="card-text" id="aboutText">Dr. Kedar Sanjay Patil is a specialist doctor with a B.A.M.S. degree from MUHS, registered under Reg. No.: 1-106259-A. He is a General Physician & Surgeon, dedicated to providing quality healthcare and a range of treatments to the people of Renapur and surrounding areas.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container my-5">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card shadow-sm border-0 mb-4">
+					<div class="card-body">
+						<h2 class="card-title mb-3" id="contactTitle">Contact Us</h2>
+						<p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"></i><strong id="addressLabel">Address:</strong> <span id="addressText">Opposite Waghmare Grocery and Medical Shop, Main Market, Renapur.</span></p>
+						<p class="mb-2"><i class="bi bi-telephone-fill me-2 text-primary"></i><strong id="phoneLabel">Phone:</strong> <a href="tel:9075984392">9075984392</a></p>
+						<p class="mb-2"><i class="bi bi-clock-fill me-2 text-primary"></i><strong id="clinicHoursLabel2">Clinic Hours:</strong> <span id="clinicHours2">9 am to 12 pm and 4 pm to 9 pm</span></p>
+					</div>
+				</div>
+				<div class="card shadow-sm border-0">
+					<div class="card-body">
+						<form id="contactForm">
+							<div class="mb-3">
+								<label for="name" class="form-label" id="formNameLabel">Name</label>
+								<input type="text" class="form-control" id="name" required>
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label" id="formEmailLabel">Email</label>
+								<input type="email" class="form-control" id="email" required>
+							</div>
+							<div class="mb-3">
+								<label for="message" class="form-label" id="formMessageLabel">Message</label>
+								<textarea class="form-control" id="message" rows="3" required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary w-100" id="formSubmitBtn">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-dark text-white text-center py-3">
+		<p id="footerText">&copy; 2023 Gurukrupa Clinic. All rights reserved.</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="src/js/main.js"></script>
+	<script>
+		// Dark/Bright mode toggle logic
+		const modeToggle = document.getElementById('modeToggle');
+		const modeIcon = document.getElementById('modeIcon');
+		const langToggle = document.getElementById('langToggle');
+		const langLabel = document.getElementById('langLabel');
+		const body = document.body;
+		function setMode(dark) {
+			if (dark) {
+				body.classList.add('dark-mode');
+				modeIcon.classList.remove('bi-moon-fill');
+				modeIcon.classList.add('bi-sun-fill');
+			} else {
+				body.classList.remove('dark-mode');
+				modeIcon.classList.remove('bi-sun-fill');
+				modeIcon.classList.add('bi-moon-fill');
+			}
+		}
+		modeToggle.addEventListener('click', function() {
+			setMode(!body.classList.contains('dark-mode'));
+		});
+
+		// Language toggle logic (English/Marathi)
+		const translations = {
+			en: {
+				langLabel: 'मराठी',
+				titleGajanan: '।। Sri Gajanan Prasanna ।।',
+				titleClinic: 'Sri Gurukrupa Clinic',
+				doctorName: 'Dr. Kedar Sanjay Patil',
+				doctorDegree: 'B.A.M.S. (MUHS) | Reg. No.: 1-106259-A',
+				doctorSpeciality: 'General Physician & Surgeon',
+				clinicHoursLabel: 'Clinic Hours:',
+				clinicHours: '9 am to 12 pm and 4 pm to 9 pm',
+				contactLabel: 'Contact:',
+				facilitiesTitle: 'Our Facilities & Treatments',
+				facilitiesCard: 'Facilities',
+				facilitiesList: [
+					'Blood sugar check',
+					'Treatment of hemorrhoids',
+					'Nebulization (steam supply)',
+					'Panchakarma Ayurveda treatment'
+				],
+				diagnosisCard: 'Diagnosis & Treatment',
+				diagnosisList: [
+					'Typhoid, Malaria',
+					'Jaundice, Arthritis',
+					'Rheumatism, Stomach disorders',
+					'Diabetic insomnia',
+					'Obesity'
+				],
+				aboutTitle: 'About Dr. Kedar Sanjay Patil',
+				aboutText: 'Dr. Kedar Sanjay Patil is a specialist doctor with a B.A.M.S. degree from MUHS, registered under Reg. No.: 1-106259-A. He is a General Physician & Surgeon, dedicated to providing quality healthcare and a range of treatments to the people of Renapur and surrounding areas.',
+				contactTitle: 'Contact Us',
+				addressLabel: 'Address:',
+				addressText: 'Opposite Waghmare Grocery and Medical Shop, Main Market, Renapur.',
+				phoneLabel: 'Phone:',
+				clinicHoursLabel2: 'Clinic Hours:',
+				clinicHours2: '9 am to 12 pm and 4 pm to 9 pm',
+				formNameLabel: 'Name',
+				formEmailLabel: 'Email',
+				formMessageLabel: 'Message',
+				formSubmitBtn: 'Submit',
+				footerText: '&copy; 2023 Gurukrupa Clinic. All rights reserved.'
+			},
+			mr: {
+				langLabel: 'English',
+				titleGajanan: '।। श्री गजानन प्रसन्न ।।',
+				titleClinic: 'श्री गुरुकृपा क्लिनिक',
+				doctorName: 'डॉ. केदार संजय पाटील',
+				doctorDegree: 'बी.ए.एम.एस. (MUHS) | नोंदणी क्र.: 1-106259-A',
+				doctorSpeciality: 'जनरल फिजिशियन व सर्जन',
+				clinicHoursLabel: 'क्लिनिक वेळ :',
+				clinicHours: 'सकाळी ९ ते १२ व सायं. ४ ते ९',
+				contactLabel: 'संपर्क :',
+				facilitiesTitle: 'सुविधा व उपचार',
+				facilitiesCard: 'सुविधा',
+				facilitiesList: [
+					'ब्लड शुगर तपासणी',
+					'मूळव्याध उपचार',
+					'नेब्युलायझेशन (वाफ पुरवठा)',
+					'पंचकर्म आयुर्वेद उपचार'
+				],
+				diagnosisCard: 'रोग निदान व उपचार',
+				diagnosisList: [
+					'टायफॉईड, मलेरिया',
+					'पिवळ्या कावळ्या, संधिवात',
+					'संधिवात, पोटाचे विकार',
+					'मधुमेही निद्रानाश',
+					'लठ्ठपणा'
+				],
+				aboutTitle: 'डॉ. केदार संजय पाटील विषयी',
+				aboutText: 'डॉ. केदार संजय पाटील हे MUHS येथून बी.ए.एम.एस. पदवीधर असून, नोंदणी क्र.: 1-106259-A आहेत. ते जनरल फिजिशियन व सर्जन आहेत व रेनापूर व परिसरातील लोकांना दर्जेदार आरोग्यसेवा देतात.',
+				contactTitle: 'संपर्क',
+				addressLabel: 'पत्ता :',
+				addressText: 'वाघमारे किराणा व मेडिकल समोर, मुख्य बाजार, रेनापूर.',
+				phoneLabel: 'फोन :',
+				clinicHoursLabel2: 'क्लिनिक वेळ :',
+				clinicHours2: 'सकाळी ९ ते १२ व सायं. ४ ते ९',
+				formNameLabel: 'नाव',
+				formEmailLabel: 'ईमेल',
+				formMessageLabel: 'संदेश',
+				formSubmitBtn: 'पाठवा',
+				footerText: '&copy; २०२३ श्री गुरुकृपा क्लिनिक. सर्व हक्क राखीव.'
+			}
+		};
+		let isMarathi = false;
+		function setLanguage(marathi) {
+			const lang = marathi ? 'mr' : 'en';
+			const t = translations[lang];
+			langLabel.textContent = t.langLabel;
+			document.getElementById('titleGajanan').textContent = t.titleGajanan;
+			document.getElementById('titleClinic').textContent = t.titleClinic;
+			document.getElementById('doctorName').textContent = t.doctorName;
+			document.getElementById('doctorDegree').textContent = t.doctorDegree;
+			document.getElementById('doctorSpeciality').textContent = t.doctorSpeciality;
+			document.getElementById('clinicHoursLabel').textContent = t.clinicHoursLabel;
+			document.getElementById('clinicHours').textContent = t.clinicHours;
+			document.getElementById('contactLabel').textContent = t.contactLabel;
+			document.getElementById('facilitiesTitle').textContent = t.facilitiesTitle;
+			document.getElementById('facilitiesCard').textContent = t.facilitiesCard;
+			// Facilities list
+			const facList = document.getElementById('facilitiesList').querySelectorAll('li span');
+			t.facilitiesList.forEach((txt, i) => { if(facList[i]) facList[i].textContent = txt; });
+			document.getElementById('diagnosisCard').textContent = t.diagnosisCard;
+			const diagList = document.getElementById('diagnosisList').querySelectorAll('li span');
+			t.diagnosisList.forEach((txt, i) => { if(diagList[i]) diagList[i].textContent = txt; });
+			document.getElementById('aboutTitle').textContent = t.aboutTitle;
+			document.getElementById('aboutText').textContent = t.aboutText;
+			document.getElementById('contactTitle').textContent = t.contactTitle;
+			document.getElementById('addressLabel').textContent = t.addressLabel;
+			document.getElementById('addressText').textContent = t.addressText;
+			document.getElementById('phoneLabel').textContent = t.phoneLabel;
+			document.getElementById('clinicHoursLabel2').textContent = t.clinicHoursLabel2;
+			document.getElementById('clinicHours2').textContent = t.clinicHours2;
+			document.getElementById('formNameLabel').textContent = t.formNameLabel;
+			document.getElementById('formEmailLabel').textContent = t.formEmailLabel;
+			document.getElementById('formMessageLabel').textContent = t.formMessageLabel;
+			document.getElementById('formSubmitBtn').textContent = t.formSubmitBtn;
+			document.getElementById('footerText').innerHTML = t.footerText;
+		}
+		langToggle.addEventListener('click', function() {
+			isMarathi = !isMarathi;
+			setLanguage(isMarathi);
+		});
+	</script>
+</body>
+</html>
