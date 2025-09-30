@@ -1,23 +1,296 @@
+/* Center icons in toggle buttons */
+/* Toggle buttons: fixed size, no overlap, icons centered */
+.header-toggles {
+    position: fixed;
+    top: 1.5rem;
+    right: 2.5rem;
+    z-index: 1050;
+    display: flex;
+    gap: 1rem;
+}
+.header-toggles .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 44px;
+    min-height: 44px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: transparent;
+    border: 1.5px solid #404653;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.header-toggles .btn i {
+    font-size: 1.3em;
+    margin-right: 0.5em;
+}
+.header-toggles .btn:last-child i {
+    margin-right: 0;
+}
+@media (max-width: 1200px) {
+    .header-toggles {
+        right: 1rem;
+        gap: 0.5rem;
+    }
+}
+@media (max-width: 575.98px) {
+    .header-toggles {
+        flex-direction: column;
+        top: 0.5rem;
+        right: 0.5rem;
+        gap: 0.25rem;
+    }
+    .header-toggles .btn {
+        width: 38px;
+        height: 38px;
+    }
+    .header-toggles .btn span {
+        display: none;
+    }
+    .header-toggles .btn i {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header-toggles {
+        flex-direction: column;
+        top: 0.5rem;
+        right: 0.5rem;
+        gap: 0.25rem;
+    }
+    .header-toggles .btn {
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        justify-content: center;
+    }
+    .header-toggles .btn span {
+        display: none;
+    }
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+    header .display-4 {
+        font-size: 1.2rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+    section {
+        padding: 24px 8px;
+    }
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    .container, .container-fluid {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #modeToggle {
+        top: 8px !important;
+        right: 8px !important;
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    header .display-4 {
+        font-size: 1.2rem;
+    }
+    .row.g-4 > [class^='col-'] {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header .display-4 {
+        font-size: 1.2rem;
+    }
+    .container {
+        max-width: 900px;
+    }
+}
+/* Improved dark mode styles for better readability */
+.dark-mode {
+    background-color: #181a1b !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode header,
+.dark-mode section,
+.dark-mode .services {
+    background-color: #23272b !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .card,
+.dark-mode .card-body {
+    background-color: #23272b !important;
+    color: #f1f1f1 !important;
+    border-color: #343a40 !important;
+}
+
+.dark-mode .list-group-item {
+    background-color: #23272b !important;
+    color: #f1f1f1 !important;
+    border-color: #343a40 !important;
+}
+
+.dark-mode .form-control {
+    background-color: #181a1b !important;
+    color: #f1f1f1 !important;
+    border-color: #343a40 !important;
+}
+
+.dark-mode .form-label,
+.dark-mode label {
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .btn-primary {
+    background-color: #375a7f !important;
+    border-color: #375a7f !important;
+}
+
+.dark-mode .btn-light {
+    background-color: #343a40 !important;
+    color: #f1f1f1 !important;
+    border-color: #23272b !important;
+}
+
+.dark-mode a,
+.dark-mode a:visited {
+    color: #66bfff !important;
+}
+
+.dark-mode .text-primary {
+    color: #66bfff !important;
+}
+
+.dark-mode .text-dark {
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .text-muted {
+    color: #b0b0b0 !important;
+}
+/* Mode toggle button style */
+#modeToggle {
+    z-index: 10;
+    border-radius: 50%;
+    min-width: 44px;
+    min-height: 44px;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #394245;
+    border: 1.5px solid #82a2ee;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+.header-toggles .btn:focus, .header-toggles .btn:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border: 1.5px solid #007bff;
+}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+#modeToggle:focus {
+    outline: 2px solid #007bff;
+}
+/* Dark mode styles */
+.dark-mode {
+    background-color: #181a1b !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode header {
+    background-color: #23272b !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode section,
+.dark-mode .services {
+    background-color: #23272b !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .list-group-item {
+    background-color: #23272b !important;
+    color: #f1f1f1 !important;
+    border-color: #343a40 !important;
+}
+
+.dark-mode footer {
+    background-color: #181a1b !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .btn-primary {
+    background-color: #375a7f !important;
+    border-color: #375a7f !important;
+}
+
+.dark-mode .btn-light {
+    background-color: #343a40 !important;
+    color: #f1f1f1 !important;
+    border-color: #23272b !important;
+}
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #e9ecef;
     color: #343a40;
 }
 
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 0;
+    background-color: #fff;
+    color: #343a40;
+    padding: 32px 0 24px 0;
     text-align: center;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.dark-mode header {
+    background-color: #23272b !important;
+    color: #f1f1f1 !important;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 1.1rem;
+    margin: 0 0 0.25rem 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
 section {
     padding: 40px 20px;
+    background-color: #f4f6fa;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border-radius: 12px;
+    border: 1px solid #e3e6ed;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    background-color: #fff;
 }
 
 .services {
@@ -39,4 +312,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.04);
 }
