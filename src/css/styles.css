@@ -79,7 +79,7 @@
 /* Responsive tweaks */
 @media (max-width: 767.98px) {
     header .display-4 {
-        font-size: 1.2rem;
+        font-size: 0.7rem;
     }
     header h2 {
         font-size: 1.2rem;
@@ -105,7 +105,7 @@
 
 @media (max-width: 991.98px) {
     header .display-4 {
-        font-size: 1.2rem;
+        font-size: 0.7rem;
     }
     .row.g-4 > [class^='col-'] {
         margin-bottom: 1.5rem;
@@ -114,7 +114,7 @@
 
 @media (min-width: 1200px) {
     header .display-4 {
-        font-size: 1.2rem;
+        font-size: 0.7rem;
     }
     .container {
         max-width: 900px;
@@ -201,12 +201,7 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     border: 1.5px solid #007bff;
 }
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
+
 #modeToggle:focus {
     outline: 2px solid #007bff;
 }
